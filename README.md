@@ -29,10 +29,10 @@
   </section>
   <section>
     <h2>🪆 Beyond Coding</h2>
-    <p>I bring a diverse skillset to the table beyond coding.  I hold a degree in Theater from the University of Tehran, where I directed two productions.  My creative side also extends to music, where I play the accordion and am a devoted music enthusiast.For a more detailed look at my writing and editing experience, check out my resume on <a href="https://www.linkedin.com/in/sepehr-san/">Linkedin</a>.</p>
+    <p>I bring a diverse skillset to the table beyond coding.  I hold a degree in Theater from the University of Tehran, where I directed two productions.  My creative side also extends to music, where I play the accordion and am a devoted music enthusiast.For a more detailed look at my writing and editing experience, check out my resume on <a href="https://www.linkedin.com/in/sepehr-san/" target="_blank">Linkedin</a>.</p>
   </section>
   <section>
-    <h3>📮 You can reach me at <a href="mailto: peper1375@gmail.com">My Mail</a>.</h3>
+    <h3>📮 You can reach me at <a href="mailto: peper1375@gmail.com" target="_blank">My Mail</a>.</h3>
   </section>
 
 <!---
