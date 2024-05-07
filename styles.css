@@ -6,11 +6,20 @@
 
 :root {
     font-size: 16px;
+    --main-color: rgb(96, 65, 100);
+    --text-resume-color: rgb(78, 84, 84);
+    --text-info-color: white;
+    --secondary-color: rgb(61, 21, 61);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 main {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: center;
     font-family: vazirmatn;
     background-color: rgb(22, 28, 38);
@@ -18,13 +27,13 @@ main {
 
 .info {
     width: 300px;
-    background-color: rgb(96, 65, 100);
-    color: white;
+    background-color: var(--main-color);
+    color: var(--text-info-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     direction: rtl;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px 3vh 20px;
 }
 
 .image-wrapper {
@@ -55,7 +64,7 @@ img {
     font-size: 1.1rem;
     padding-bottom: .7vh;
     margin-bottom: 2vh;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid var(--text-info-color);
     width: 100%;
     font-weight: 400;
 }
@@ -70,7 +79,8 @@ img {
 }
 
 .contact a:hover {
-    color: #fffb;
+    color: var(--text-info-color);
+    opacity: .65;
 }
 
 .lines {
@@ -124,15 +134,81 @@ img {
     width: 100%;
     margin-top: 3vh;
     font-size: .9rem;
-    margin-bottom: 10px;
 }
 
 .resume {
     width: 700px;
     background-color: rgb(245, 239, 236);
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-@media only screen and (max-width: 840px) {
+.resume * {
+    direction: rtl;
+}
+.resume .title {
+    border-bottom: 1px solid var(--text-resume-color);
+    font-size: 1.1rem;
+    padding-bottom: .7vh;
+    margin-bottom: 2vh;
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+.me {
+    padding: 8vh 8vw 0 0;
+    /* margin-bottom: 6.4vh; */
+}
+.me .name {
+    font-size: 2rem;
+    color: var(--main-color);
+    font-weight: 400;
+}
+.me .position {
+    /* margin-right: 2vw; */
+    color: var(--text-resume-color);
+}
+.profile {
+    margin-top: 3vh;
+}
+.profile .text {
+    text-align: justify;
+    color: var(--text-resume-color);
+    font-size: .9rem;
+}
+.experiences {
+    margin-top: 3vh;
+}
+.resume ul {
+    border-right: 1px solid var(--text-resume-color);
+}
+.resume ul li {
+    font-size: .9rem;
+    margin-right: 10.5px;
+    margin-bottom: 2vh;
+    list-style-type: disc;
+}
+.experiences .work-position {
+    font-size: .85rem;
+}
+.experiences .work-date {
+    font-size: .8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 510px) {
     :root {
         font-size: 15px;
     }
@@ -144,5 +220,10 @@ img {
     }
     .resume {
         width: 100%;
+    }
+    .me {
+        padding: 0;
+        margin: 3vh 1vw;
+        /* margin-bottom: 6.4vh; */
     }
 }
