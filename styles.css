@@ -142,7 +142,7 @@ img {
     padding: 10px 20px 10px 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .resume * {
@@ -190,11 +190,26 @@ img {
     margin-bottom: 2vh;
     list-style-type: disc;
 }
+.company {
+    font-size: 1.3rem;
+}
 .experiences .work-position {
     font-size: .85rem;
 }
 .experiences .work-date {
+    font-size: .85rem;
+}
+.work-details {
     font-size: .8rem;
+}
+.hidden {
+    display: none;
+}
+.experiences a:hover {
+    color: var(--text-info-color);
+    background-color: var(--main-color);
+    border-radius: .2rem;
+    padding-inline: .1rem;
 }
 
 
